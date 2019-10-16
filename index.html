@@ -8,5 +8,48 @@
 </head>
 <body>
     
+<div class="container-fluid">
+        <h2 class="page-header">Create Mobile Brand</h2>
+        <form (submit)="onBrandSubmit()">
+            <div class="form-group">
+                <label for="">BRAND</label>
+                <input type="text" [(ngModel)]="brand" name="brand" class="form-control">
+            </div>
+            <br>
+            <div class="form-group">
+                <label for="">SPECIFICATIONS</label>
+                <br>
+                <br>    
+                <div class="row">
+                <div class="col-md-6">
+                    <label for="">Operating System</label>
+                    <input type="text" [(ngModel)]="operatingsystem" name="operatingsystem" class="form-control">
+                </div>
+                <div class="col-md-6">
+                        <label for="">Processor</label>
+                    <input type="text" [(ngModel)]="processor" name="processor" class="form-control">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-6">
+                        <label for="">Chipset</label>
+                    <input type="text" [(ngModel)]="chipset" name="chipset" class="form-control">
+                </div>
+                <div class="col-md-6">
+                        <label for="">Touch</label>
+                    <input type="boolean" [(ngModel)]="touch" name="touch" class="form-control">
+                </div>
+            </div>
+        <br><br>
+            <div class="form-group">
+                    <label for="">MODEL</label>
+                    <input type="text" [(ngModel)]="model" name="model" class="form-control">
+                </div>
+            </div>
+            <input type="submit" class="btn btn-primary" value="Create">
+        </form>
+        </div>
+    
 </body>
 </html>
